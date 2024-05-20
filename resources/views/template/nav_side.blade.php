@@ -3,7 +3,7 @@
         <ul class="nav" id="main-menu">
 
             <li>
-                <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                <a class="active-menu" href="index.html"><i class="fa fa-home"></i> Home</a>
             </li>
             <li>
                 <a href="ui-elements.html"><i class="fa fa-users"></i> Users</a>
