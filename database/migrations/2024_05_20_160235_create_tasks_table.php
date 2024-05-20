@@ -17,7 +17,9 @@ return new class extends Migration
             $table->text('content');
             $table->integer('status');
             $table->integer('created_by');
-            $table->timestamps();
+            $table->integer("is_published")->default(0);
+            $table->timestamp('created_at')->nullable(false)->useCurrent();
+            $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->softDeletes();
         });
     }

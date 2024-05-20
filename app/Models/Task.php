@@ -15,7 +15,9 @@ class Task extends Model
         'title',
         'content',
         'status',
-        'created_by'
+        'created_by',
+        'created_at',
+        'updated_at'
     ];
 
 }

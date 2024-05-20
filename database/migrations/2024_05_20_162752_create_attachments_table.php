@@ -16,7 +16,8 @@ return new class extends Migration
             $table->integer('task_id')->require();
             $table->text('path')->require();
             $table->integer('created_by')->require();
-            $table->timestamps();
+            $table->timestamp('created_at')->nullable(false)->useCurrent();
+            $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->softDeletes();
         });
     }

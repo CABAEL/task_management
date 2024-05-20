@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('task_status', function (Blueprint $table) {
             $table->id();
             $table->string("status");
-            $table->integer("is_published")->default(0);
-            $table->timestamps();
+            $table->timestamp('created_at')->nullable(false)->useCurrent();
+            $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->softDeletes();
             // 1 = to-do/ 2 = in-progress/ 3 = done
         });
