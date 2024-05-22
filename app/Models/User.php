@@ -24,9 +24,10 @@ class User extends Authenticatable
         'lname',
         'username',
         'password',
-        'created_by',
+        'status',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'role_id'
     ];
 
     /**

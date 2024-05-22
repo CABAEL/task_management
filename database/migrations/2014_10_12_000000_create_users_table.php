@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('username',60)->require();
             $table->string('password',255)->require();
             $table->integer('role_id')->require(); // admin and users
-            $table->integer('created_by')->require();
+            $table->integer('status')->default(0);
             $table->timestamp('created_at')->nullable(false)->useCurrent();
             $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->softDeletes();
