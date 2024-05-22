@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">ariJ</a>
+        <a class="navbar-brand" href="/"><h5>{{env('APP_NAME')}}</h5></a>
     </div>
 
     <ul class="nav navbar-top-links navbar-right">
