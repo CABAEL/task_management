@@ -33,7 +33,7 @@ class UserSeeder extends Seeder
                 'lname' => 'lnameadmin',
                 'username' => 'user1',
                 'password' => Hash::make('admin'),
-                'role_id' => 1,
+                'role_id' => 2,
                 'status' => 0
             ],
             [
@@ -42,16 +42,16 @@ class UserSeeder extends Seeder
                 'lname' => 'lnameadmin',
                 'username' => 'user2',
                 'password' => Hash::make('admin'),
-                'role_id' => 1,
+                'role_id' => 2,
                 'status' => 0
             ],
             [
                 'fname' => 'fnameadmin',
                 'mname' => 'mnameadmin',
                 'lname' => 'lnameadmin',
-                'username' => 'user2',
+                'username' => 'user3',
                 'password' => Hash::make('admin'),
-                'role_id' => 1,
+                'role_id' => 2,
                 'status' => 0
             ],
         ]);
